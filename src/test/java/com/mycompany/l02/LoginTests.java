@@ -9,7 +9,7 @@ import static org.testng.Assert.assertTrue;
 
 public class LoginTests extends TestBase {
 
-    @Test
+    @Test(enabled = false)
     public void loginNegative() {
         //Printing Id of the thread on using which test method got executed
         System.out.println("Test Case One with Thread Id:- "

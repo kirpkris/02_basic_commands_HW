@@ -10,7 +10,7 @@ import static org.testng.Assert.assertFalse;
 public class LoginTestsPositive extends TestBase {
 
 
-    @Test
+    @Test(enabled = false)
     public void loginPositive() {
         //Printing Id of the thread on using which test method got executed
         System.out.println("Test Case One with Thread Id:- "
@@ -18,11 +18,11 @@ public class LoginTestsPositive extends TestBase {
 
         WebElement userName = driver.findElement(By.id("UserName"));
         userName.clear();
-        userName.sendKeys("vishkov");
+        userName.sendKeys("kkirpich");
 
         WebElement password = driver.findElement(By.id("Password"));
         password.clear();
-        password.sendKeys("CorrectPW");
+        password.sendKeys("Kk19950610");
 
         driver.findElement(By.id("logonButton")).click();
 

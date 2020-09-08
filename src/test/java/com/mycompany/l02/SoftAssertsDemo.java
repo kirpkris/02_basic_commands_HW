@@ -14,7 +14,7 @@ public class SoftAssertsDemo extends TestBase {
     String loginData = "vishkov";
     String passwordData = "CorrectPW";
 
-    @Test
+    @Test(enabled = false)
     public void basicCommandsTest() {
         SoftAssert softAssert = new SoftAssert();
 

@@ -3,7 +3,7 @@ package com.mycompany.l02;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
@@ -15,9 +15,9 @@ public class TestBase {
 
     @BeforeTest
     public void initData() {
-        driver = new FirefoxDriver();
+        driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get("https://intra.t-systems.ru/");
+        driver.get("https://www.ozon.ru/");
     }
 
     @AfterTest

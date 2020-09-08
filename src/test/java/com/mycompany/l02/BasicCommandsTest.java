@@ -13,7 +13,7 @@ public class BasicCommandsTest extends TestBase {
     String loginData = "vishkov";
     String passwordData = "CorrectPW";
 
-    @Test
+    @Test(enabled = false)
     public void basicCommandsTest() {
         WebElement userName = driver.findElement(By.id("UserName"));
         WebElement password = driver.findElement(By.id("Password"));
